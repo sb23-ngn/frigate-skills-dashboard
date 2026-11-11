@@ -6,3 +6,12 @@
 .page-overview .main > #intro {display:flex;}
 .page-skills .main > #skills,.page-qualifications .main > #qualifications,.page-projects .main > #projects,.page-directory .main > #directory,.page-explorer .main > #explorer {display:grid;}
 .page-directory .main > #directory,.page-explorer .main > #explorer {display:block;}
+
+/* Multi-page navigation: show only the section selected by the current page. */
+body.page-overview #skills, body.page-overview #qualifications, body.page-overview #projects, body.page-overview #directory, body.page-overview #explorer { display:none !important; }
+body.page-skills #intro, body.page-skills #kpis, body.page-skills #qualifications, body.page-skills #projects, body.page-skills #directory, body.page-skills #explorer, body.page-skills #insightsPage { display:none !important; }
+body.page-qualifications #intro, body.page-qualifications #kpis, body.page-qualifications #skills, body.page-qualifications #projects, body.page-qualifications #directory, body.page-qualifications #explorer, body.page-qualifications #insightsPage { display:none !important; }
+body.page-projects #intro, body.page-projects #kpis, body.page-projects #skills, body.page-projects #qualifications, body.page-projects #directory, body.page-projects #explorer, body.page-projects #insightsPage { display:none !important; }
+body.page-directory #intro, body.page-directory #kpis, body.page-directory #skills, body.page-directory #qualifications, body.page-directory #projects, body.page-directory #explorer, body.page-directory #insightsPage { display:none !important; }
+body.page-explorer #intro, body.page-explorer #kpis, body.page-explorer #skills, body.page-explorer #qualifications, body.page-explorer #projects, body.page-explorer #directory, body.page-explorer #insightsPage { display:none !important; }
+body.page-overview #insightsPage { display:block; }
